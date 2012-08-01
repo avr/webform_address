@@ -1,0 +1,17 @@
+name = Webform Address
+description = "Provide Address Component for Webform"
+
+; Core version (required)
+core = 7.x
+
+; Loadable code files
+files[] = webform_address.module
+; files[] = webform_address.admin.inc
+; files[] = webform_address.class.inc
+
+; Module dependencies
+dependencies[] = webform
+dependencies[] = addressfield
+
+; Configuration page
+; configure = admin/config/webform_address

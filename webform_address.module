@@ -1,0 +1,26 @@
+<?php
+/**
+ * @file
+ * This is the file description for Webform Address module.
+ *
+ * In this more verbose, multi-line description, you can specify what this
+ * file does exactly. Make sure to wrap your documentation in column 78 so
+ * that the file can be displayed nicely in default-sized consoles.
+ */
+
+/**
+ * Implements hook_webform_component_info().
+ */
+function webform_address_webform_component_info() {
+  return array(
+    'address' => array(
+      'label' => t('Address'),
+      'description' => t('Allows collection of mailing addresses.'),
+      'features' => array(
+        'conditional' => FALSE,
+        'title_inline' => FALSE,
+      ),
+      'file' => 'webform_address.inc',
+    ),
+  );
+}
